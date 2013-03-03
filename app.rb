@@ -16,7 +16,7 @@ class Karibu < Sinatra::Base
     serve '/css',    from: 'assets/stylesheets'
     serve '/images', from: 'assets/images'
 
-    js  :app, ['/js/jquery.min.js', '/js/jquery*.js', '/js/*.js']
+    js  :app, ['/js/jquery.js', '/js/jquery*.js', '/js/*.js']
     css :app, ['/css/*.css']
   end
 
