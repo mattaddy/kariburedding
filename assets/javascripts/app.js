@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function () {
   $('#slider').nivoSlider({
     effect: 'sliceDownRight',
     pauseTime: 5000
