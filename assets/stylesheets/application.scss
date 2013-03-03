@@ -1,0 +1,102 @@
+@import 'bourbon/bourbon';
+@import 'settings';
+@import 'neat/neat';
+
+body {
+  margin: 0;
+  font-family: Calibri, 'sans-serif';
+  line-height: 1.5em;
+  color: #333;
+  text-align: justify;
+  background-image: url(/images/cream_dust.png);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Orienta', sans-serif;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+#header {
+
+  #logo {
+    font-family: 'Allan', sans-serif;
+    font-size: 400%;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .stuck {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #nav-wrapper {
+    background-color: $nav-dark;
+    color: #fff;
+    border-top: 1px solid darken($nav-dark, 20%);
+    border-bottom: 1px solid darken($nav-dark, 20%);
+  }
+
+  #nav {
+    width: 550px;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: #fff;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: darken($nav-dark, 25%);
+        border: 1px solid darken($nav-dark, 40%);
+        border-radius: 3px;
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      .active {
+        background-color: darken($nav-dark, 25%);
+        border: 1px solid darken($nav-dark, 40%);
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.container {
+  @include outer-container;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+.photo {
+  @include span-columns(4);
+}
+
+.contact {
+  @include span-columns(8);
+}
+
+#footer {
+  text-align: right;
+  margin-top: 20px;
+  background-color: #494f57;
+  color: #fff;
+  padding: 20px 0;
+}

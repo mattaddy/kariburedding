@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Karibu
+    %link{href: 'http://fonts.googleapis.com/css?family=Orienta|Allan:bold', rel: 'stylesheet'}
+    != js  :app
+    != css :app
+  %body
+    = haml :_header
+    #content
+      .container
+        =yield
+    = haml :_footer
