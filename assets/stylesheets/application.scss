@@ -4,11 +4,11 @@
 
 body {
   margin: 0;
-  font-family: Calibri, 'sans-serif';
+  font-family: 'Calibri', 'sans-serif';
   line-height: 1.5em;
-  color: #333;
+  color: #fff;
   text-align: justify;
-  background-image: url(/images/cream_dust.png);
+  background-image: url(/images/mochaGrunge.png);
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,10 +23,14 @@ p {
 #header {
 
   #logo {
-    font-family: 'Allan', sans-serif;
-    font-size: 400%;
+    font-family: 'Acme', sans-serif;
+    font-size: 450%;
     text-align: center;
     margin: 40px 0;
+
+    #space {
+      letter-spacing: 1em;
+    }
   }
 
   .stuck {
@@ -44,7 +48,7 @@ p {
   }
 
   #nav {
-    width: 550px;
+    width: 500px;
     margin: 0 auto;
 
     a {
